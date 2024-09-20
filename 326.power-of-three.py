@@ -17,7 +17,7 @@ class Solution:
         if n >0:
             return power_of_three(n)
         else :
-            return Falses
+            return False
             
 # @lc code=end
 

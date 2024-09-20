@@ -20,23 +20,23 @@ class Solution:
         # return True
 
         # 1. Typecast method
-        # infinities = ("inf","+inf","-inf","Infinity","+Infinity","-Infinity", "nan")
-        # try:
-        #     res = float(s)
-        #     if s in infinities:
-        #         return False
-        #     return True
-        # except:
-        #     return False
+        infinities = ("inf","+inf","-inf","Infinity","+Infinity","-Infinity", "nan")
+        try:
+            res = float(s)
+            if s in infinities:
+                return False
+            return True
+        except:
+            return False
         
         # 2. Regex method
-        expr = r"[+-]?\d*(\.)?\d*[eE]?[+-]?\d+"
+        # expr = r"[+-]?\d*(\.)?\d*[eE]?[+-]?\d+"
         
-        res = re.match(expr, s)
-        if res:
-            return True
-        else:
-            return False
+        # res = re.match(expr, s)
+        # if res:
+        #     return True
+        # else:
+        #     return False
 
 # @lc code=end
 
