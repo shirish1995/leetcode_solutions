@@ -5,8 +5,13 @@
 #
 
 # @lc code=start
+import numpy as np
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        
+        matrix = np.array(matrix)
+
+        return (bool(np.any(matrix.flatten()== target)))
         
 # @lc code=end
 
