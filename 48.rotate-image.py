@@ -20,10 +20,6 @@ class Solution:
 
         # Reverse each row
         for i in range(n):
-            matrix[i].reverse()
-            
-        
-
-        
+            matrix[i].reverse()        
 # @lc code=end
 
