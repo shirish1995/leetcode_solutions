@@ -65,7 +65,7 @@
 import numpy as np
 import cv2
 class Solution:
-    def imageSmoother(self, img: List[List[int]]) -> List[List[int]]:
+    def imageSmoother(self, img: list[list[int]]) -> list[list[int]]:
         
         ## code below works if allowed to use open cv and numpy
         img = np.array(img, dtype=np.float32)
